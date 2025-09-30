@@ -8,4 +8,11 @@ Tugas 1 Pertemuan 2
 
 Tugas2 Pertemuan 3
 
-![Tugas2Pertemuan3](https://github.com/user-attachments/assets/b16bd3d7-274c-443a-9f49-d0e6bddb2ab7)
+https://github.com/user-attachments/assets/73fd1fa7-09b9-486c-9c8a-bf56dae00aa2
+
+
+Tugas 3 Pert 4
+
+
+https://github.com/user-attachments/assets/496fa02b-88d6-401e-9e4e-3d02263cc0ba
+
