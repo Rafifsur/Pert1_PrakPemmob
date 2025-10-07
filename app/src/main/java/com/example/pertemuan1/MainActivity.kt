@@ -7,6 +7,7 @@ import com.example.pertemuan1.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         initNavigation()
     }
+
     private fun initNavigation(){
         binding.btnToPage2.setOnClickListener {
             startActivity(Intent(this, Halaman2Activity::class.java))

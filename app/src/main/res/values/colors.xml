@@ -4,4 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorPrimary">#0074FF</color>
     <color name="colorSecondary">#FFFDD500</color>
+    <!-- Added to match layout reference app:cardBackgroundColor="@color/material_dynamic_primary90" -->
+    <color name="material_dynamic_primary90">#FFEEEEEE</color>
 </resources>

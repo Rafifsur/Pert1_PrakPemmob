@@ -6,7 +6,7 @@ package com.example.pertemuan1.ui.adapter
     import com.example.pertemuan1.data.model.BookDoc
     import com.example.pertemuan1.databinding.ListBukuBinding
 
-    class BookAdapter(private var books: List<BookDoc>) :
+    class BookAdapter(private var books: List<BookDoc>, private val onBookClickListener: OnBookClickListener) :
         RecyclerView.Adapter<BookAdapter.BookViewHolder>() {
 
         inner class BookViewHolder(val binding: ListBukuBinding) :
@@ -24,6 +24,10 @@ package com.example.pertemuan1.ui.adapter
             holder.binding.tvTitle.text = book.title ?: "No Title"
             holder.binding.tvAuthor.text = book.authorName?.joinToString(separator = ", ") ?: "Unknown Author"
             holder.binding.tvYear.text = book.firstPublishYear?.toString() ?: "-"
+
+            holder.binding.root.setOnClickListener {
+                onBookClickListener.onBookClick(book)
+            }
         }
 
         fun setData(newBooks: List<BookDoc>) {
@@ -31,3 +35,7 @@ package com.example.pertemuan1.ui.adapter
             notifyDataSetChanged()
         }
     }
+
+interface OnBookClickListener {
+    fun onBookClick(book: BookDoc)
+}
